@@ -1,8 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
 body{
-    background-color: rgba(0, 0, 0, 0.938);
+    /* background-color: rgba(0, 0, 0, 0.938); */
+    background-color: rgb(235, 238, 241);
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all;
+    background-color: rgb(80, 80, 80);
 }
 
 .wrapper{
@@ -83,18 +100,17 @@ hr{
 .left-list{
     display: flex;
     justify-content: space-between;
-    width: 180px;
+    width: 200px;
     padding: 0px;
     margin-bottom: 14px;
 }
-.left-list .active{
-  color: turquoise;
-  font-weight: bold;
+.left-list .active, .section-filter-category .active{
+  color: rgb(46, 161, 155);
+  font-weight: 700;
 }
-ul li{
-    color: rgba(226, 218, 218, 0.979);
+
+li{
     list-style-type: none;
-    font-size: 15.34px;
 }
 
 .left-list li a{
@@ -102,28 +118,29 @@ ul li{
     color: rgba(226, 218, 218, 0.979);
 }
 .left-list li a:hover{
-    color: turquoise;
+    color: rgb(46, 161, 155);
 }
 
 .right-list{
     display: flex;
     justify-content: space-between;
-    width: 120px;
+    width: 130px;
     padding: 0px;
     margin-bottom: 14px;
     margin-right: 10px;
 }
-
-.right-list li{
-    padding: 0.1rem 0px;
-    width: 40%;
-    text-align: center;
+.right-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: small;
 }
 
-.right-list #login{
-    border-right: 2px solid rgba(184, 179, 179, 0.979);
-    padding-right: 0.5rem;
+.line{
+    border-left: 2px solid white;
+    height: 20px;
 }
+
+
 .menu-item2{
     width: 100%;
     height: 48%;
@@ -132,6 +149,7 @@ ul li{
     align-items: center;
 }
 .home-link{
+    padding: 0%;
     width: 140px;
     height: 80%;
     display: flex;
@@ -145,11 +163,11 @@ ul li{
 .home-link .houses{
     font-size: 15px;
     color: white;
-    font-weight: bold;
+    font-weight: 700;
 }
 .home{
-    font-weight:100;
-    font-size: 15px;
+    font-weight: 400;
+    font-size: 12px;
 }
 .btn-div{
     margin-top: 0.3rem;
@@ -160,12 +178,18 @@ ul li{
 .btn-div button{
     width: 100%;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 400;
     color: #eee;
-    background-color: rgb(46, 90, 235);
-    border: 1px solid rgb(46, 90, 235);;
+    background-color: rgb(65, 105, 225);
+    border: 1px solid rgb(65, 105, 225);
     border-radius: 0.375rem;
     padding: 0.43rem 0.3rem;
+    cursor: pointer;
+}
+
+.btn-div button:hover{
+    background-color: rgb(51, 82, 175);
+    border: 1px solid rgb(51, 82, 175);
 }
 
 
@@ -180,35 +204,89 @@ main{
 
 
 .item2{
-    grid-column: 2/5;
+    grid-column: 2/-1;
     grid-row: 1/3;
-    background-color: brown;
+    background-color: rgb(209, 207, 207);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(146, 158, 170);
+
+}
+
+.section-filter-category{
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    height: 50%;
+    margin-left: 4%;
+}
+
+.section-filter-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 450px;
+    height: 50%;
+    margin-right: 5%;
+
+}
+
+.section-filter-icons form{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.section-filter-icons ul{
+    width: 130px;
+    padding: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-filter-icons ul i{
+    font-size: xx-large;
+    /* color: rgb(112, 128, 114); */
+}
+
+.section-filter-icons ul i:hover,.section-filter-category li:hover{
+    cursor: pointer;
+    color: rgb(46, 161, 155);
+}
+
+.sort-category i{
+    position: absolute;
+    right: 0;
+}
+
+.section-filter-icons form label{
+    font-size: 15px;
+}
+.section-filter-icons form select{
+    font-size: 9px;
+    width: 11rem;
+    padding: 0.5rem 0.3rem;
 }
 .right-aside{
     grid-column: 5/6;
-    grid-row: 1/15;
-    background-color: brown;
+    grid-row: 3/15;
+    background-color: white;
     padding: 0px 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 27px;
+    font-size: 24px;
+    color: rgb(146, 158, 170);
 }
-.item4{
-    grid-column: 2/5;
-    grid-row: 3/18;
-    background-color: brown;
-}
+
 .item5{
     grid-column: 3/4;
-    grid-row: 18/20;
-    background-color: brown;
-}
-
-
-footer{
-    width: 100%;
-    background-color: aqua;
+    grid-row: 20/22;
 }
 
 /* left aside start */
@@ -217,7 +295,7 @@ footer{
     grid-column: 1/2;
     color: rgba(107, 103, 103, 0.932);
     grid-row: 1/12;
-    background-color: rgb(132, 165, 42);
+    background-color: rgb(215, 220, 236);
     padding: 0px 0.9rem;
     display: flex;
     justify-content: center;
@@ -235,11 +313,12 @@ footer{
 .form-head{
     width: 95%;
     font-size: 22px;
-    font-weight: bold;
     margin:0px auto 16px auto;
 }
 
 .form-head h5{
+    color: rgb(117, 128, 139);
+    font-weight: 700;
     margin: 0%;
 }
 
@@ -249,11 +328,13 @@ footer{
     height: 50px;
     width: 95%;
     font-size: 8px;
-    margin:0px auto 9px auto;
+    margin:0px auto 12px auto;
 }
 .form-group label{
     font-size: 13px;
     margin-bottom: 5px;
+    color: rgb(119, 129, 139);
+
 }
 
 .search{
@@ -262,7 +343,7 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgba(177, 174, 174, 0.932);
+    background-color: rgb(114, 115, 118);
     color: white;
     position: relative;
 }
@@ -279,7 +360,8 @@ footer{
     outline: none;
     padding-left: 0.5rem;
     font-size: 10px;
-    background-color: transparent;
+    background-color: rgb(114, 115, 118);
+    color: white;
 }
 
 .search input::placeholder{
@@ -312,7 +394,8 @@ footer{
     right: 0;
     width: 30px;
     height: 100%;
-    background-color: lightgray;
+    background-color: rgb(146, 158, 170);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -334,8 +417,9 @@ footer{
 
 .total-price .title{
     margin: 0%;
-    font-size: 15px;
+    font-size: 12px;
     word-spacing: 10px;
+    font-weight: 700;
 }
 
 .price-scale {
@@ -366,22 +450,299 @@ footer{
     outline: none;
 }
 
-.done-btn{
+.done-btn,.load-more-btn{
     font-size: small;
     justify-content: center;
     align-items: center;
 }
 
-.done-btn button{
+.load-more-btn button, .done-btn button{
     width: 185px;
     font-size: small;
     font-weight: bold;
     color: white;
-    background-color: lightgray;
-    border: 1px solid lightgray;
+    background-color: rgb(79, 101, 122);
+    border: 1px solid rgb(110, 138, 165);
     border-radius: 0.375rem;
     padding: 0.43rem 0.3rem;
+    cursor: pointer;
+}
+.load-more-btn button:hover, .done-btn button:hover{
+    background-color: rgb(54, 68, 82);
+}
+/* left aside ends */
+
+.item4{
+    grid-column: 2/5;
+    grid-row: 3/20;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 12px;
 }
 
-/* left aside end */
+.apartments1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
 
+.apartment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0.1px solid rgb(114, 115, 118);
+}
+
+.h-img{
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+
+.h-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.h-price sup{
+    font-size: xx-small;
+    margin-bottom: auto;
+}
+
+.h-price sub{
+    font-size: xx-small;
+    margin-top: auto;
+}
+
+.h-info h5 , .h-info p , .h-info h6{
+    padding: 0%;
+    margin: 0%;
+    margin-left: 0.5rem;
+    font-weight: 200;
+    color: rgba(107, 103, 103, 0.932);
+}
+
+.h-info i,.h-extra i{
+    margin-right: 0.375rem;
+    font-size: small;
+    color: rgb(46, 161, 155);
+}
+
+.h-info p{
+    font-size: xx-small;
+}
+
+.h-info h6{
+    margin-left: 0.6rem;
+    margin-top: 0.4rem;
+    padding-top: 0.1rem;
+    font-size: xx-small;
+}
+
+.h-price{
+    width: 110px;
+    padding: 0.3rem 7px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: rgb(46, 161, 155);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.h-info{
+    width: 100%;
+    height: 28%;
+    padding: 0.5rem 0px;
+    border-top: 0.1px solid rgb(124, 124, 124);
+    border-bottom: none;
+    position: relative;
+}
+
+.h-info .fa-star{
+    position: absolute;
+    right: 0.87rem;
+    bottom: 0.87rem;
+    font-size: small;
+    color: rgb(151, 147, 147);
+}
+
+.h-extra{
+    width: 100%;
+    height: 12%;
+    display: flex;
+}
+
+
+.h-extra span{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    justify-content:center;
+    align-items:center;
+    border: 0.1px solid rgb(124, 124, 124);
+    border-bottom: none;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(151, 147, 147);
+}
+
+
+.apartments2{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.apartments3{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.apartments4{
+    grid-column: 1/2;
+    grid-row: 3/5;
+}
+
+.apartments5{
+    grid-column: 2/3;
+    grid-row: 3/5;
+}
+
+.apartments6{
+    grid-column: 3/4;
+    grid-row: 3/5;
+}
+
+.apartments7{
+    grid-column: 1/2;
+    grid-row: 5/7;
+}
+
+.apartments8{
+    grid-column: 2/3;
+    grid-row: 5/7;
+}
+
+.apartments9{
+    grid-column: 3/4;
+    grid-row: 5/7;
+}
+
+.range{
+    height: 15%;
+}
+
+footer{
+    width: 100%;
+    height: 370px;
+    background-color: rgb(79, 101, 122);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer section{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.footer-top{
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80%;
+    border-bottom: 2px solid white;
+}
+
+.footer-top div{
+    width: 300px;
+    height: 90%;
+}
+
+.contact-info{
+    margin-left: 2rem;
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+.contact-info i{
+    margin: 0 10px;
+}
+
+.footer-bottom{
+    width: 100%;
+    height: 10%;
+    justify-content: space-between;
+}
+
+.footer-bottom-right{
+    width: 30%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom-left{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom-left h6,.footer-bottom-right h4,.contact-us h4{
+    margin: 0%;
+    font-weight: 700;
+}
+
+
+
+.quick-links{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-links ul{
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -0.5rem;
+}
+
+.quick-links ul li{
+    padding: 0.5rem 0px;
+    font-size: small;
+    font-weight: 700;
+}
+
+.quick-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.quick-links ul li a:hover{
+    color: rgb(46, 161, 155);
+}
+
+.left-ul li{
+    margin-left: 2rem;
+}
+
+.recent-post p{
+    font-size: small;
+    line-height: 12px;
+    margin-bottom: 2.5rem;
+}
+
+.recent-post small{
+    font-size: xx-small;
+}

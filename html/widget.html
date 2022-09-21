@@ -10,7 +10,6 @@
 </head>
 <body>
     
-        <div class="wrapper">
             <header>
                 <nav>
                     <div class="nav-logo">
@@ -25,8 +24,9 @@
                                 <li><a href="./properties.html">Our Properties</a></li>
                             </ul>
                             <ul class="right-list">
-                                <li id="login">Login</li>
-                                <li id="register">Register</li>
+                                <li id="login"><a href="#">Login</a></li>
+                                <li class="line"></li>
+                                <li id="register"><a href="#">Register</a></li>
                             </ul>
                         </div> 
                         <hr>
@@ -43,7 +43,10 @@
             <main>
                     <section id="intro">
                         <div class="intro filter-property">
-                            <i class="fa fa-filter"> <a href="#">FILTER</a></i>
+                            <div class="filter-title">
+                                <i class="fa fa-filter"></i> 
+                                <span href="#">FILTER</span>
+                            </div>
                             <ul>
                                 <li><a href="#" class="active">All</a></li>
                                 <li><a href="#">Rent</a></li>
@@ -55,7 +58,7 @@
                         </div>
                         <div class="intro filters">
                             <select name="" id="">
-                                <option selected disabled>Category</option>
+                                <option id="selected" selected disabled>Category</option>
                             </select>
                             <select name="" id="">
                                 <option selected disabled>Location</option>
@@ -72,7 +75,7 @@
                         <div class="intro prices">
                             <div class="total-price">
                                 <h5>Price: $00.00-$10,000.00</h5>
-                                <span style="border-radius: 5px;height: 5px; width: 100%; background-color: blueviolet;"></span>
+                                <input type="range">
                             </div>
                             <div class="find-it-btn">
                                 <button>Find it</button>
@@ -87,7 +90,6 @@
                     <i class="far fa-arrow-alt-circle-down"></i>
                 </section>
             </footer>
-        </div>
 
 </body>
 </html>

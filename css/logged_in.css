@@ -1,237 +1,24 @@
-body{
-    background-color: rgba(0, 0, 0, 0.938);
-    margin: 0;
-    padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
-.wrapper{
-    margin: 1rem auto;
-    width: 94%;
-    height: 45.5rem;
-    border: 1px solid rgba(107, 103, 103, 0.932);
-    display: grid;
-    grid-template-rows: 144px auto 150px;
-}
-
-header{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all;
-    background-color: rgba(0, 0, 0, 0.87);
-}
-
-nav{
-    width: 91.9%;
-    height: 73%;
-    display: grid;
-    grid-template-columns: 230px auto;
-    grid-template-rows: 100%;
-    column-gap: 1.3rem;
-    margin-bottom: 15px;
-}
-
-.nav-logo{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: sienna; */
-    padding-left: 0.1rem;
-}
-
-.logo{
-    background-color: rgb(20, 20, 20); 
-    width: 67%; 
-    height: 70%;
-    padding: 0.2rem 4px 0.1rem 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo h2{
-    padding: 0px;
-    font-weight: bolder;
-    font-size: 23px;
-    color: rgb(187, 182, 182);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-hr{
-    width: 99.8%;
-    background-color:rgb(160, 160, 160);
-    padding: 1px;
-    border: none;
-    margin: 0;
-}
-
-.menu-item1{
-    width: 100%;
-    height: 48%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.left-list{
-    display: flex;
-    justify-content: space-between;
-    width: 180px;
-    padding: 0px;
-    margin-bottom: 14px;
-}
-
-ul li{
-    color: rgba(226, 218, 218, 0.979);
-    list-style-type: none;
-    font-size: 15.34px;
-}
-
-.left-list li a{
-    text-decoration: none;
-    color: rgba(226, 218, 218, 0.979);
-}
-.left-list li a:hover{
-    color: turquoise;
-}
-.left-list .active{
-    font-weight: bold;
-    color: turquoise;
-}
 .right-list{
     display: flex;
     justify-content: space-between;
-    width: 200px;
+    align-items: center;
+    width: 210px;
     padding: 0px;
     margin-bottom: 14px;
     margin-right: 10px;
 }
-
-.right-list li{
-    padding: 0.1rem 0px;
-    width: 40%;
-    text-align: center;
-}
-
-.right-list #login{
-    width: auto;
-    border-right: 2px solid rgba(184, 179, 179, 0.979);
-    padding-right: 1rem;
-    font-size: large;
-    font-weight: 400;
-}
-/* .nav-menu{
-} */
-.menu-item2{
-    width: 100%;
-    height: 48%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.btn-div{
-    margin-top: 0.3rem;
-    width: 180px; height: 60%; 
-}
-
-.btn-div button{
-    width: 100%;
+.right-list li a{
     font-size: small;
-    font-weight: bold;
-    color: #eee;
-    background-color: rgb(46, 90, 235);
-    border: 1px solid rgb(46, 90, 235);;
-    border-radius: 0.375rem;
-    padding: 0.43rem 0.3rem;
-}
-
-footer{
-    display: flex;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-
-}
-
-.lastest-post{
-    width: auto;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.lastest-post h4{
-    margin: 0%;
-    margin-bottom: 0.5rem;
-    font-size: 15px;
-}
-.lastest-post i{
-    font-size: 20px;
-}
-
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#intro{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.intro{
-    height: 38px;
-    margin: 0.7rem auto;
-    display: flex;
-    align-items: center;
-    color: rgb(255, 255, 255);
-}
-
-.promo-property {
-    width: 86%;
-    font-size: x-large;
-}
-
-.search-property{
-    width: 93.1%;
-    margin-right: 0.1rem;
-    background-color: rgba(0, 0, 0, 0.438);
-}
-.search-property i{
-    margin-left: 1.5rem;
-}
-
-.search-property input{
-    width: 89%;
-    border: none;
-    outline: none;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    margin-left: 1rem;
-    font-size: 15px;
-    font-weight: 400;
-    padding-left: 1rem;
-    color: white;
-    background-color: transparent;
-}
-.filter-property a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin-left: 0.4rem;
+    color: white;
 }
-.filter-property{
-    width: 20%;
-    margin-right: 0.1rem;
-    justify-content: flex-end;
+
+#login a{
+    font-size: large;
+}
+
+.line{
+    border-left: 2px solid white;
+    height: 20px;
 }

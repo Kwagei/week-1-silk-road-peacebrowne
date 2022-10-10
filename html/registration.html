@@ -5,13 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/registration.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../fontawesome-free-5.10.2-web/css/all.min.css">
     <title>Register</title>
 </head>
 <body>
-    
+    <aside>
+        <section class="items">
+            <i class="fa fa-times"></i>
+            <ul class="top">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="properties.html">Our Properties</a></li>
+            </ul>
+            <ul class="right-list">
+                <li id="login"><a href="login.html">Login</a></li>
+                <li class="line"></li>
+                <li id="register"><a class="active" href="registration.html">Register</a></li>
+            </ul>
+            <hr>
+            <ul class="home-link">
+                <li class="home">HOME</li> 
+                <li><i class="fa fa-angle-right"></i></li>
+                <li class="register">REGISTER</li>
+            </ul>
+            <div class="btn-div">
+                <button>Post a Property</button>
+            </div>
+        </section>
+    </aside>
     <header>
-        <nav>
+        <nav class="desktop-nav">
             <div class="nav-logo">
                 <div class="logo">
                     <h2>SILKROAD</h2>
@@ -43,7 +66,15 @@
                     
                 </div>
             </div>
-        </section>
+        </nav>
+        <nav class="mobile-nav">
+            <div class="icon">
+                <i class="fa fa-bars"></i> 
+            </div>
+            <div class="logo">
+                <h2>SILKROAD</h2>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -55,9 +86,11 @@
                         nec finibus libero consectetur
                     </p>
                 
-                    <button class="register-btn">
-                        Login
-                    </button>
+                    <a href="login.html">
+                            <button class="register-btn">
+                            Login
+                        </button>
+                    </a>
                 </div>
                 <form action="#" class="register-form">
                     <div class="form-head">
@@ -101,6 +134,6 @@
             </section>
     </main>
 
-
+    <script src="../js/general.js"></script>
 </body>
 </html>

@@ -5,13 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/widget.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../fontawesome-free-5.10.2-web/css/all.min.css">
     <title>Widget</title>
 </head>
 <body>
+
+    <aside>
+        <section class="items">
+            <i class="fa fa-times"></i>
+            <ul class="top">
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a href="properties.html">Our Properties</a></li>
+            </ul>
+            <ul class="right-list">
+                <li id="login"><a href="login.html">Login</a></li>
+                <li class="line"></li>
+                <li id="register"><a href="registration.html">Register</a></li>
+            </ul>
+            <hr>
+            <div class="btn-div">
+                <button>Post a Property</button>
+            </div>
+        </section>
+    </aside>
+
     
             <header>
-                <nav>
+                <nav class="desktop-nav">
                     <div class="nav-logo">
                         <div class="logo">
                             <h2>SILKROAD</h2>
@@ -37,7 +58,15 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </nav>
+                <nav class="mobile-nav">
+                    <div class="icon">
+                        <i class="fa fa-bars"></i> 
+                    </div>
+                    <div class="logo">
+                        <h2>SILKROAD</h2>
+                    </div>
+                </nav>
             </header>
 
             <main>
@@ -56,7 +85,7 @@
                         <div class="intro search-property">
                             <input type="text" name="" id="" placeholder="KEYWORD">
                         </div>
-                        <div class="intro filters">
+                        <div class="intro filters" id="filter">
                             <select name="" id="">
                                 <option id="selected" selected disabled>Category</option>
                             </select>
@@ -64,7 +93,7 @@
                                 <option selected disabled>Location</option>
                             </select>
                         </div>
-                        <div class="intro filters">
+                        <div class="intro filters" id="filter">
                             <select name="" id="">
                                 <option selected disabled>No. of Bedrooms</option>
                             </select>
@@ -72,7 +101,7 @@
                                 <option selected disabled>No. of Bathrooms</option>
                             </select>                        
                         </div>
-                        <div class="intro prices">
+                        <div class="intro prices" id="prices">
                             <div class="total-price">
                                 <h5>Price: $00.00-$10,000.00</h5>
                                 <input type="range">
@@ -89,6 +118,8 @@
                     <i class="far fa-arrow-alt-circle-down"></i>
                 </section>
             </footer>
+
+            <script src="../js/general.js"></script>
 
 </body>
 </html>

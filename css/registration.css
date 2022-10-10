@@ -343,3 +343,139 @@ main{
 .register-options a:hover{
     color: rgb(77, 84, 90);
  }
+
+
+.mobile-nav,aside{
+    display: none;
+}
+
+@media only screen and (min-width:360px) and (max-width: 900px) {
+
+
+    body{
+        background-color: black;
+    }
+      
+    .desktop-nav{
+        display: none;
+    }
+      
+    .mobile-nav{
+        margin-bottom: 0%;
+        display: flex;
+        width: 100%;
+        height: 80%;
+        padding: 0px 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+    .mobile-nav i{
+        font-size: large;
+    }
+    .logo{
+        background-color: rgb(17, 17, 17); 
+        padding: 1rem 0px;
+    }
+    .icon{
+        background-color: rgb(17, 17, 17); 
+        width: 30px;
+        padding:  0.4rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    aside{
+        position: absolute;
+        display: none;
+        width: 100%;
+        height: 100vh;
+        padding: 2rem 0px;
+        background-color: rgba(8, 8, 8, 0.952);
+        z-index: 1;
+    }
+
+    .items{
+        width: 90%;
+        height: 50%;
+        padding: 1rem 2rem;
+        margin: 0px auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .top{
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0%;
+        padding: 0%;
+    }
+    .top a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    .right-list{
+        width: 150px;
+        font-size: 20px;
+    }
+    .home-link{
+        height: 0%;
+    }
+
+    .btn-div{
+        height: auto;
+    }
+
+    .right-list li a{
+        font-size: large;
+    }
+    .fa-times{
+        margin-left: auto;
+        font-size: 20px;
+        color: white;
+    }
+
+    .promo-property{
+        display: flex;
+        font-size: large;
+    }
+
+    .intro-info {
+        width: 100%;
+        margin-right: auto;
+    }
+    
+    
+
+    #intro {
+        width: 77%;
+        justify-content: flex-start;
+        height: 74%;
+        padding: 2rem 5px;
+    }
+    #intro h2 ,.register-btn{
+        margin-left: 1rem;
+        font-weight: 400;
+    }
+
+    #intro p {
+        display: none;
+    }
+
+    .register-form{
+        position: absolute;
+        width: 84%;
+        height: 390px;
+        left: 7%;
+        top: 14rem;
+    }
+
+    .register-options {
+        width: 150px;
+    }
+
+}

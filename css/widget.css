@@ -196,7 +196,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 1rem 0px;
+    padding: 2rem 0px;
 }
 
 .intro{
@@ -326,4 +326,54 @@ main{
 .total-price input{
     height: 5px;
     margin-left: -0.1%;
+}
+
+
+/* mobile */
+@media only screen and (max-width: 500px) and (min-width: 320px) {
+
+    #filter{
+        height: 90px;
+        flex-direction: column;
+    }
+
+    .filters select{
+        width: 100%;
+        padding: 0.5rem 0px 0.5rem 0.5rem;
+    }
+
+    #prices {
+        justify-content: space-between;
+        flex-direction: column;
+        height: 80px;
+    }
+
+    .total-price {
+        width: 100%;
+        padding-bottom: 0.5rem;
+    }
+
+    #intro{
+        padding: 1rem 0px;
+    }
+
+}
+
+/* tablet */
+@media only screen and (min-width:501px) and (max-width: 900px) {
+    .filters select{
+        width: 47%;
+        padding: 0.5rem 0px 0.5rem 0.5rem;
+        font-size: small;
+    }
+
+    .total-price input{
+        width: 80%;
+    }
+
+    .total-price h5{
+        font-size: small;
+        word-spacing: 5px;
+    }
+
 }

@@ -358,3 +358,81 @@ main{
 .login-options a:hover{
    color: rgb(77, 84, 90);
 }
+
+.mobile-nav,aside{
+    /* display: none; */
+    display: none;
+}
+
+@media only screen and (min-width:320px) and (max-width: 767px) {
+
+    #main{
+        height: 94vh;
+        width: 100vw;
+    }
+    body{
+        background-color: black;
+    }
+
+    #intro p {
+        display: none;
+    }
+    .login-options {
+        width: 150px;
+    }
+    .desktop-nav{
+        display: none;
+    }
+
+    .home-link{
+        height: 0%;
+    }
+    .btn-div{
+        height: auto;
+    }
+
+    .promo-property{
+        display: flex;
+        font-size: large;
+    }
+
+    #intro {
+        width: 77%;
+        justify-content: flex-start;
+        height: 74%;
+        padding: 2rem 5px;
+    }
+
+    .intro-info {
+        width: 100%;
+    }
+
+    .login-form{
+        position: absolute;
+        width: 84%;
+        height: 390px;
+        right: 7%;
+        top: 14rem;
+    }
+
+    #intro h2 ,.register-btn{
+        margin-left: 1rem;
+        font-weight: 400;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+    #intro {
+        width: 89%;
+    }
+
+     .login-form{
+        position: absolute;
+        width: 41%;
+        height: 477px;
+        right: 10%;
+        top: 5rem;
+    }
+
+}

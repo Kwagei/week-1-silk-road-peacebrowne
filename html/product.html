@@ -9,8 +9,26 @@
     <title>Products</title>
 </head>
 <body>
+    <aside>
+        <section class="items">
+            <i class="fa fa-times"></i>
+            <ul class="top">
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a href="properties.html">Our Properties</a></li>
+            </ul>
+            <ul class="right-list">
+                <li id="login"><a href="login.html">Login</a></li>
+                <li class="line"></li>
+                <li id="register"><a href="registration.html">Register</a></li>
+            </ul>
+            <hr>
+            <div class="btn-div">
+                <button>Post a Property</button>
+            </div>
+        </section>
+    </aside>
             <header>
-                <nav>
+                <nav class="desktop-nav">
                     <div class="nav-logo">
                         <div class="logo">
                             <h2>SILKROAD</h2>
@@ -43,11 +61,19 @@
                             
                         </div>
                     </div>
-                </section>
+                </nav>
+                <nav class="mobile-nav">
+                    <div class="icon">
+                        <i class="fa fa-bars"></i> 
+                    </div>
+                    <div class="logo">
+                        <h2>SILKROAD</h2>
+                    </div>
+                </nav>
             </header>
 
             <main>
-                    <aside class="item left-aside">
+                    <section class="item left-aside">
                         <form action="#" class="search-form">
                             <div class="form-head">
                                 <h5>Search</h5>
@@ -111,7 +137,7 @@
                             </div>
 
                         </form>
-                    </aside>
+                    </section>
                     <section class="item item2">
                         <ul class="section-filter-category">
                             <li class="active">All</li>
@@ -121,12 +147,12 @@
                         <div class="section-filter-icons">
                             <ul>
                                 <li>View</li>
-                                <i class="far fa-list-alt"></i>
+                                <a href="./properties.html"><i class="far fa-list-alt"></i></a>
                                 <i class="fa fa-grip-horizontal"></i>
                             </ul>
-                            <form action="">
+                            <form action="" id="search-select">
                                 <label for="category">Sort by</label>
-                                <div class="search-group">
+                                <div  class="search-group">
                                     <select name="" id="">
                                         <option value="most-recent">Most Recent</option>
                                     </select>
@@ -321,6 +347,6 @@
                 </section>
             </footer>
 
-
+<script src="../js/general.js"></script>
 </body>
 </html>

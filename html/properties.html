@@ -9,8 +9,32 @@
     <title>Properties</title>
 </head>
 <body>
+
+    <aside>
+        <section class="items">
+            <i class="fa fa-times"></i>
+            <ul class="top">
+                <li><a href="home.html">Home</a></li>
+                <li><a class="active"  href="properties.html">Our Properties</a></li>
+            </ul>
+            <ul class="right-list">
+                <li id="login"><a href="login.html">Login</a></li>
+                <li class="line"></li>
+                <li id="register"><a href="registration.html">Register</a></li>
+            </ul>
+            <hr>
+            <ul class="home-link">
+                <li class="home">HOME</li> 
+                <li><i class="fa fa-angle-right"></i></li>
+                <li class="houses">HOUSES</li>
+            </ul>
+            <div class="btn-div">
+                <button>Post a Property</button>
+            </div>
+        </section>
+    </aside>
             <header>
-                <nav>
+                <nav class="desktop-nav">
                     <div class="nav-logo">
                         <div class="logo">
                             <h2>SILKROAD</h2>
@@ -43,11 +67,19 @@
                             
                         </div>
                     </div>
-                </section>
+                </nav>
+                <nav class="mobile-nav">
+                    <div class="icon">
+                        <i class="fa fa-bars"></i> 
+                    </div>
+                    <div class="logo">
+                        <h2>SILKROAD</h2>
+                    </div>
+                </nav>
             </header>
 
             <main>
-                    <aside class="item left-aside">
+                    <section class="item left-aside">
                         <form action="#" class="search-form">
                             <div class="form-head">
                                 <h5>Search</h5>
@@ -111,7 +143,7 @@
                             </div>
 
                         </form>
-                    </aside>
+                    </section>
                     <section class="item item2">
                         <ul class="section-filter-category">
                             <li class="active">All</li>
@@ -122,7 +154,7 @@
                             <ul>
                                 <li>View</li>
                                 <i class="far fa-list-alt"></i>
-                                <i class="fa fa-grip-horizontal"></i>
+                                <a href="./product.html"><i class="fa fa-grip-horizontal"></i></a>
                             </ul>
                             <form action="">
                                 <label for="category">Sort by</label>
@@ -135,9 +167,9 @@
                             </form>
                         </div>
                     </section>
-                    <aside class="item right-aside">
+                    <section class="item right-aside">
                        <span>Advertisement</span>
-                    </aside>
+                    </section>
                     <section class="item item4" id="houses">
                         <div class="apartment apartments1">
                             <div class="h-img">
@@ -365,6 +397,6 @@
                 </section>
             </footer>
 
-
+            <script src="../js/property.js"></script>
 </body>
 </html>

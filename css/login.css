@@ -367,11 +367,12 @@ main{
 @media only screen and (min-width:320px) and (max-width: 767px) {
 
     #main{
-        height: 94vh;
+        height: 93vh;
         width: 100vw;
     }
     body{
         background-color: black;
+        overflow: hidden
     }
 
     #intro p {
@@ -413,6 +414,7 @@ main{
         height: 390px;
         right: 7%;
         top: 14rem;
+        margin-top: 1rem;
     }
 
     #intro h2 ,.register-btn{
@@ -422,17 +424,21 @@ main{
 
 }
 
-@media only screen and (min-width:768px) and (max-width: 1023px) {
+@media only screen and (min-width:768px) and (max-width: 844px) {
+    main{
+        height: 100vh;
+    }
     #intro {
-        width: 89%;
+        width: 90vh;
+        height: auto;
     }
 
      .login-form{
         position: absolute;
         width: 41%;
         height: 477px;
-        right: 10%;
-        top: 5rem;
+        right: 4rem;
+        top: 8rem;
     }
 
 }

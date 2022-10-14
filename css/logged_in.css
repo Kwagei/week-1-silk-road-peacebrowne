@@ -1,0 +1,33 @@
+
+.right-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 210px;
+    padding: 0px;
+    margin-bottom: 14px;
+    margin-right: 10px;
+}
+.right-list li a{
+    font-size: small;
+    text-decoration: none;
+    color: white;
+}
+
+#login a{
+    font-size: large;
+}
+
+.line{
+    border-left: 2px solid white;
+    height: 20px;
+}
+
+
+
+@media only screen and (min-width:360px) and (max-width: 900px) {
+.right-list{
+    width: 70%;
+}
+
+}
